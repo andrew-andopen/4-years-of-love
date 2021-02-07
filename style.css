@@ -153,6 +153,25 @@ header {
   z-index:2;
 }
 
+.explore{
+  position:absolute;
+  bottom: 2rem;
+  animation: upDown 1.2s infinite ease-in-out;
+}
+
+.scroll-arrow{
+  max-width:2rem;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-80%);
+  }
+}
+
 .seinfeld,
 .wonka {
   padding: 3rem 0;
@@ -169,7 +188,7 @@ header {
 
 .phone {
   filter: drop-shadow(-30px 20px 10px rgba(0, 0, 0, 0.2));
-  padding: 20px 15px 80px 15px;
+  padding: 20px 15px 40px 15px;
   background-color: #faf7f3;
   border-radius: 15px;
   display: flex;
@@ -199,7 +218,7 @@ span.emoji {
 
 .smiley{
   text-align:center;
-  line-height:1.2;
+  line-height:1.5;
 }
 
 .feed-mask {
