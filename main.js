@@ -1,12 +1,12 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // Insta
-// ScrollTrigger.defaults({
-//   markers: true,
-// })
+ScrollTrigger.defaults({
+  markers: true,
+})
 
 const tlEmoji = gsap.timeline();
-tlEmoji.to(".emoji-wrap", {yPercent: -90, ease: "easeInOut"});
+tlEmoji.to(".emoji-wrap", {yPercent: -90, ease: "easeInOut"},);
 
 ScrollTrigger.create({
   animation: tlEmoji,
