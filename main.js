@@ -6,7 +6,7 @@ ScrollTrigger.defaults({
 })
 
 const tlEmoji = gsap.timeline();
-tlEmoji.to(".emoji-wrap", {yPercent: -90, ease: "easeInOut"},);
+tlEmoji.to(".emoji-wrap", {yPercent: -80, ease: "easeInOut"},);
 
 ScrollTrigger.create({
   animation: tlEmoji,

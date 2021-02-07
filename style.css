@@ -48,6 +48,12 @@ h4 {
   position: relative;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 8rem 5rem;
+}
+
 .max-width-large {
   max-width: 1200px;
   margin: 0 auto;
@@ -141,14 +147,9 @@ header {
 
 .intro,
 .success{
-  background-color: #fece62;
+  background-color: #fecf62;
 }
 
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 8rem 5rem;
-}
 
 
 .seinfeld,
@@ -336,7 +337,7 @@ span.emoji {
 
 footer {
   background-color: #f1ece1;
-  padding: 5rem 5rem;
+  padding: 5rem 5rem 10rem 5rem;
   bottom: 0;
 }
 
