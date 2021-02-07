@@ -439,6 +439,15 @@ h2 {
   .container{
         padding: 4rem 1rem;
   }
+
+  .shape {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   
      .start-two-span-four {
     grid-column: 1/13;
