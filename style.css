@@ -1,0 +1,477 @@
+@font-face {
+  font-family: Saol Text Semibold;
+  src: url(saol-text-semibold.otf);
+}
+
+@font-face {
+  font-family: Leitura News Roman2;
+  src: url(leitura-news-roman-2.otf);
+}
+
+@font-face {
+  font-family: nittigrotesk-light;
+  src: url(nittigrotesk-light.otf);
+}
+
+/*styles*/
+body {
+  background-color: #faf7f3;
+  color: #141414;
+  font-family: Leitura News Roman2;
+  font-size: 16px;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: Saol Text Semibold;
+  font-size: 5rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p,
+h4 {
+  font-family: nittigrotesk-light;
+}
+
+/*utility*/
+.wrapper {
+  width: 100vw;
+  position: relative;
+}
+
+.max-width-large {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.max-width-medium {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.h-v-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.v-center {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.twelve-col {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.start-two-span-four {
+  grid-column: 3/7;
+}
+
+.start-eight-span-eleven {
+  grid-column: 8/11;
+}
+
+.h-100 {
+  min-height: 100vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.m-top-8 {
+  margin-top: 8rem;
+}
+
+/*main*/
+header {
+  position: fixed;
+  min-width: 100%;
+  padding: 2.5rem 5rem;
+  z-index: 2;
+  display: none;
+}
+
+.logo {
+  max-width: 8rem;
+}
+
+#featureAnimation {
+  z-index: 2;
+  height: 200vh;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shape {
+  position: absolute;
+  width: 80px;
+  height: 60px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro,
+.success{
+  background-color: #fece62;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 8rem 5rem;
+}
+
+.last-year {
+  position: absolute;
+  top: 100vh;
+  z-index: 20;
+}
+
+.seinfeld,
+.wonka {
+  padding: 3rem 0;
+  max-width: 100%;
+}
+
+.wins.wrapper {
+  background-color: #42584a;
+}
+
+.wins h2 {
+  color: #fff;
+}
+
+.phone {
+  filter: drop-shadow(-30px 20px 10px rgba(0, 0, 0, 0.2));
+  width: 320px;
+  height: 580px;
+  padding: 20px 0 60px 0;
+  background-color: #faf7f3;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto 0 auto;
+  line-height: 1;
+}
+
+span.emoji {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.emoji-mask {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.emoji-wrap {
+  position: absolute;
+  width: 100%;
+  height: 400%;
+}
+
+.smiley {
+  margin-bottom: 0.5rem;
+}
+
+.feed-mask {
+  position: relative;
+  overflow: hidden;
+  width: 293px;
+  height: 520px;
+  background-color: #ffb93c;
+  border-radius: 20px;
+  margin-top: 1rem;
+}
+
+.feed-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400%;
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.panel:first-child {
+  background-image: url('doggo.png');
+}
+
+.panel:nth-child(2) {
+  background-image: url('aesop.png');
+}
+
+.panel:nth-child(3) {
+  background-image: url('plant.png');
+}
+
+.panel:nth-child(4) {
+  background-image: url('doggo.png');
+}
+
+.percent {
+  font-size: 12rem;
+  line-height: 1;
+}
+
+.more {
+  background-color: #fece62;
+}
+
+.slider-wrapper {
+  background-color: #fece62;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: calc(30% - 1rem);
+  background-color: #faf7f3;
+  padding: 5rem 3rem;
+  border-radius: 16px;
+  margin: 1rem;
+}
+
+.card h1{
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.marquee {
+  top: 5vh;
+  left: 0;
+  width: 100%;
+  line-height: 1;
+  overflow: hidden;
+  margin-top: 5rem;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0vw);
+  }
+  50% {
+    transform: translateX(-2000vw);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.marquee-text {
+  animation: moveLeft 1000s infinite linear;
+  white-space: nowrap;
+  height: 124px;
+}
+
+.marquee h1 {
+  font-size: 4vw;
+  white-space: nowrap;
+  margin: 0px 40px;
+}
+
+.oprah {
+  height: 60px;
+}
+
+.success{
+  background-color: #faf7f300;
+  z-index: 20;
+}
+
+.success-feature#featureAnimation{
+  background-color: #fece62;
+  height: 100vh;
+}
+
+.success-btn{
+  margin: 2rem 0 0 0;
+}
+
+.marquee:hover .oprah {
+  animation: rotate 3s infinite linear;
+}
+
+footer {
+  background-color: #f1ece1;
+  padding: 5rem 5rem;
+  bottom: 0;
+}
+
+footer h3.tag {
+  font-size: 16px;
+  background: url(footer_logo.svg) 0 0 no-repeat;
+  background-size: auto 22px;
+  padding-left: 50px;
+  width: 400px;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1536px) {
+  .wins .container {
+    padding: 4rem 5rem 10rem 5rem;
+  }
+  .phone {
+    margin-top: 1rem;
+  }
+  .marquee {
+    margin-top: 1.5rem;
+  }
+
+  .outro .container {
+    padding: 3rem 5rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  
+  h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+  
+  header,
+  footer{
+  padding: 2.5rem 2rem 8rem 2rem;
+}
+  
+  .percent {
+  font-size: 10rem;
+}
+  
+  .container{
+      padding: 8rem 3rem;
+  }
+  .start-two-span-four {
+    grid-column: 1/7;
+}
+ .start-eight-span-eleven {
+    grid-column: 8/13;
+}
+  
+  .card {
+  background-color: #faf7f3;
+  padding: 3rem 2rem;
+    margin: 0.5rem;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .stats{
+    margin-top: 4rem;
+  }
+  
+  .stats h3{
+    margin-bottom: 1.5rem;
+  }
+  
+    .start-two-span-four {
+    grid-column: 3/11;
+      text-align: center;
+}
+ .start-eight-span-eleven {
+      width: 100%;
+    grid-column: 3/11;
+      text-align: center;
+}
+  
+    .card {
+  width: calc(50% - 1rem);
+}
+}
+
+@media only screen and (max-width: 540px) {
+ 
+ 
+  header{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .logo{
+    max-width: 6rem;
+  }
+  
+  .container{
+        padding: 4rem 1rem;
+  }
+  
+     .start-two-span-four {
+    grid-column: 1/13;
+      text-align: center;
+}
+ .start-eight-span-eleven {
+      width: 100%;
+    grid-column: 1/13;
+      text-align: center;
+}
+  
+.card {
+  width: 100%;
+}
+  
+  .outro .container {
+    padding: 3rem 2rem;
+}
+  
+}
+
+
+
+
+
+
+
