@@ -160,7 +160,7 @@ header {
 }
 
 .scroll-arrow{
-  max-width:2rem;
+  max-width:1.5rem;
 }
 
 @keyframes upDown {
