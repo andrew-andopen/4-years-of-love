@@ -110,6 +110,7 @@ header {
   padding: 2.5rem 5rem;
   z-index: 2;
   display: none;
+  z-index:2;
 }
 
 .logo {

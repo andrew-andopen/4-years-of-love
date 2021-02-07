@@ -15,7 +15,7 @@ ScrollTrigger.create({
   pin: true,
   anticipatePin: 1,
   pinSpacing:true,
-  start:"-5%",
+  start:"-10%",
 });
 
 
