@@ -172,6 +172,12 @@ header {
   }
 }
 
+
+
+.last-year .container{
+  padding: 0rem 5rem;
+}
+
 .seinfeld,
 .wonka {
   padding: 3rem 0;
@@ -382,10 +388,6 @@ footer h3.tag {
 
   .outro .container {
     padding: 3rem 5rem;
-  }
-
-  .last-year .container{
-    padding: 0rem 5rem;
   }
 }
 
