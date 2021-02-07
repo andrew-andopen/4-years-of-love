@@ -382,6 +382,12 @@ footer h3.tag {
   .phone {
     margin-top: 1rem;
   }
+
+
+.feed-mask {
+  height: 480px;
+}
+
   .marquee {
     margin-top: 1.5rem;
   }
