@@ -13,9 +13,10 @@
   src: url(nittigrotesk-light.otf);
 }
 
+
 /*styles*/
 body {
-  background-color: #faf7f3;
+  background-color: #FAF7F3;
   color: #141414;
   font-family: Leitura News Roman2;
   font-size: 16px;
@@ -453,7 +454,7 @@ h2 {
 
 @media only screen and (max-width: 768px) {
   
-  .stats{
+  .m-top-8{
     margin-top: 4rem;
   }
   
@@ -482,7 +483,8 @@ h2 {
     font-size: 2.4rem;
   }
  
-  h2 {
+  h2,
+  h3 {
     font-size: 1.2rem;
   }
  
@@ -497,7 +499,7 @@ h2 {
   }
   
   .container{
-        padding: 4rem 1rem;
+        padding: 4rem 2rem;
   }
 
   .shape {
@@ -519,21 +521,37 @@ h2 {
 }
 
 .wins .container {
-  padding: 1rem 5rem 10rem 5rem;
+  padding: 2rem 5rem 10rem 5rem;
 }
 
 .feed-mask {
   height: 440px;
 }
+
+
   
-     .start-two-span-four {
+.start-two-span-four {
     grid-column: 1/13;
       text-align: center;
 }
- .start-eight-span-eleven {
+.start-eight-span-eleven {
       width: 100%;
     grid-column: 1/13;
       text-align: center;
+}
+
+.percent {
+  font-size: 7rem;
+}
+
+.twinkle-wrapper {
+  top: -40%;
+  right: 0%;
+  max-width: 20%;
+}
+
+.twinkle-wrapper-second {
+  left: 0;
 }
   
 .card {

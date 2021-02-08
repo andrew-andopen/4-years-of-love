@@ -133,3 +133,25 @@ button:hover{
   font-size: calc(0.8vw + 1vh + 1vmin);
   }
 }
+
+@media only screen  and (max-width: 540px) {
+  .form-field {
+    font-size: 20px;
+  }
+
+  .two-fields {
+    flex-direction: column;
+}
+
+  .two-fields .form-field {
+    width: 100%;
+}
+
+#address-two + label {
+  top: 10px;
+  margin: 10px 0 0 0;
+  font-size: 20px;
+}
+}
+
+
