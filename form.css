@@ -139,18 +139,16 @@ button:hover{
     font-size: 24px;
   }
 
+  #address-two + label {
+    font-size: 24px;
+  }
+
   .two-fields {
     flex-direction: column;
 }
 
   .two-fields .form-field {
     width: 100%;
-}
-
-#address-two + label {
-  top: 10px;
-  margin: 10px 0 0 0;
-  font-size: 20px;
 }
 
 select {
