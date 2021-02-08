@@ -155,7 +155,7 @@ header {
 
 .explore{
   position:absolute;
-  bottom: 2rem;
+  bottom: 5rem;
   animation: upDown 1.2s infinite ease-in-out;
 }
 
@@ -175,7 +175,8 @@ header {
 
 
 .last-year .container{
-  padding: 0rem 5rem;
+  padding-top:0;
+  padding-bottom:0;
 }
 
 .seinfeld,
@@ -476,7 +477,14 @@ h2 {
 }
 
 @media only screen and (max-width: 540px) {
+
+  h1{
+    font-size: 2.4rem;
+  }
  
+  h2 {
+    font-size: 1.2rem;
+  }
  
   header{
     position: absolute;
@@ -500,6 +508,19 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  .seinfeld, 
+  .wonka {
+    padding: 1.2rem 0;
+}
+
+.wins .container {
+  padding: 1rem 5rem 10rem 5rem;
+}
+
+.feed-mask {
+  height: 440px;
+}
   
      .start-two-span-four {
     grid-column: 1/13;
@@ -517,6 +538,18 @@ h2 {
   
   .outro .container {
     padding: 3rem 2rem;
+}
+
+.marquee {
+  margin-top: 1rem;
+}
+
+.marquee-text {
+  animation: moveLeft 200s infinite linear;
+}
+
+.marquee h1{
+  font-size:10vw;
 }
   
 }
