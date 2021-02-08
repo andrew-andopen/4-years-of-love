@@ -270,6 +270,23 @@ span.emoji {
   background-image: url('doggo.png');
 }
 
+.percent-wrapper{
+  position: relative;
+}
+
+.twinkle-wrapper{
+  position:absolute;
+  top: -60%;
+  right: -30%;
+  z-index: -1;
+  max-width: 40%;
+}
+
+.twinkle-wrapper-second{
+  left: -30%;
+}
+
+
 .percent {
   font-size: 12rem;
   line-height: 1;

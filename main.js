@@ -5,21 +5,10 @@ ScrollTrigger.defaults({
   markers: true,
 })
 
-const tlEmoji = gsap.timeline();
-tlEmoji.to(".emoji-wrap", {yPercent: -77, ease: "easeInOut"},);
-
-ScrollTrigger.create({
-  animation: tlEmoji,
-  trigger: ".wins",
-  scrub: 2,
-  pin: true,
-  anticipatePin: 1,
-  pinSpacing:true,
-});
-
-
 const tlInsta = gsap.timeline();
-tlInsta.to(".feed-wrapper", {yPercent: -75, ease: "easeInOut"});
+tlInsta
+.to(".emoji-wrap", {yPercent: -77, ease: "easeInOut"},)
+.to(".feed-wrapper", {yPercent: -75, ease: "easeInOut"}, 0);;
 
 ScrollTrigger.create({
   animation: tlInsta,
@@ -27,9 +16,8 @@ ScrollTrigger.create({
   scrub: 2,
   pin: true,
   anticipatePin: 1,
-    pinSpacing:true,
+  pinSpacing:true,
 });
-
 
 
 //Main animation
