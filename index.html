@@ -26,7 +26,9 @@
 		<meta name="generator" content="love">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>4-years-of-love-total</title>
+
+		<title>4 Years of Love</title>
+		<link rel="icon" type="image/png" href="https://andopen.co/favicons/favicon-32x32.png" sizes="32x32">
 		<link rel="stylesheet" href="base.css">
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="form.css">
@@ -254,7 +256,6 @@
 		                class="field-inpu fname"
 		                id="first-name"
 		                required
-		                autocomplete="off"
 		              />
 		              <label for="first-name"><span>First name</span></label>
 		            </div>
@@ -266,7 +267,6 @@
 		                class="field-input lname"
 		                id="last-name"
 		                required
-		                autocomplete="off"
 		              />
 		              <label for="last-name"><span>Last name</span></label>
 		            </div>
@@ -279,7 +279,6 @@
 		              class="field-input"
 		              id="address-one"
 		              required
-		              autocomplete="off"
 		            />
 		            <label for="address-one"><span>Address line one</span></label>
 		          </div>
@@ -290,7 +289,6 @@
 		              name="address-two"
 		              class="field-input"
 		              id="address-two"
-		              autocomplete="off"
 		            />
 		            <label for="address-two" id="address-two-label"><span>Address line two</span></label>
 		          </div>
@@ -302,7 +300,6 @@
 		              class="field-input"
 		              id="city"
 		              required
-		              autocomplete="off"
 		            />
 		            <label for="city"><span>City</span></label>
 		          </div>
@@ -314,7 +311,6 @@
 		              class="field-input"
 		              id="province-state-region"
 		              required
-		              autocomplete="off"
 		            />
 		            <label for="province-state-region"><span>Province/State/Region</span></label>
 		          </div>
@@ -326,13 +322,12 @@
 		              class="field-input"
 		              id="zip/postcode"
 		              required
-		              autocomplete="off"
 		            />
 		            <label for="zip/postcode"><span>Zip/Postcode</span></label>
 		          </div>
 		
 		          <div class="form-field">
-		            <select name="country" class="field-input" id="country" required autocomplete="off">
+		            <select name="country" class="field-input" id="country" required>
 		              <option value=""></option>
 		              <option value="Afghanistan">Afghanistan</option>
 		              <option value="Albania">Albania</option>
@@ -587,10 +582,20 @@
 		              name="phone"
 		              class="field-input"
 		              id="phone"
-		              autocomplete="off"
 		              required
 		            />
 		            <label for="phone"><span>Phone</span></label>
+				  </div>
+				  
+				  <div class="form-field">
+		            <input
+		              type="email"
+		              name="email"
+		              class="field-input"
+		              id="email"
+		              required
+		            />
+		            <label for="email"><span>Email</span></label>
 		          </div>
 		
 		          <button type="submit" class="submit">
