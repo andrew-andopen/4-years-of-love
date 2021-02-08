@@ -43,6 +43,11 @@ h4 {
   font-family: nittigrotesk-light;
 }
 
+a{
+  text-decoration: none;
+  line-height:1;
+}
+
 /*utility*/
 .wrapper {
   width: 100vw;
@@ -374,7 +379,7 @@ span.emoji {
 }
 
 .success-btn{
-  margin: 2rem 0 0 0;
+  margin: 2rem auto 0 auto;
 }
 
 .marquee:hover .oprah {
@@ -511,6 +516,10 @@ h2 {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  .intro h1{
+    margin-bottom: 4rem;
   }
 
   .explore{
