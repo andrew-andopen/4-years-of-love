@@ -189,6 +189,8 @@ header {
 
 .wins.wrapper {
   background-color: #42584a;
+  max-width:100vw;
+  overflow-x: hidden;
 }
 
 .wins h2 {
