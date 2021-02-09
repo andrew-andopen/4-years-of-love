@@ -428,9 +428,6 @@ footer h3.tag {
 }
 
 @media only screen and (max-width: 1536px) {
-  .wins .container {
-    padding: 4rem 5rem 10rem 5rem;
-  }
   .phone {
     margin-top: 1rem;
   }
@@ -520,6 +517,11 @@ h2 {
   h3 {
     font-size: 1.2rem;
   }
+
+
+  .highlight{
+    font-size:1.6rem;
+  }
  
   header{
     position: absolute;
@@ -556,16 +558,6 @@ h2 {
   .wonka {
     padding: 1.2rem 0;
 }
-
-.wins .container {
-  padding: 2rem 5rem 10rem 5rem;
-}
-
-.feed-mask {
-  height: 440px;
-}
-
-
   
 .start-two-span-four {
     grid-column: 1/13;
