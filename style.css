@@ -115,6 +115,11 @@ a{
   margin-top: 8rem;
 }
 
+.highlight{
+  font-family: Saol Text Semibold; 
+  font-size: 3rem;
+}
+
 /*main*/
 header {
   position: fixed;
@@ -281,6 +286,19 @@ span.emoji {
 
 .panel:nth-child(4) {
   background-image: url('doggo.png');
+}
+
+.winner{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 2;
+    font-size: 180px;
+    line-height: 1;
+    vertical-align: baseline;
+    text-align:center;
+    transform-origin: "50% 50%";
 }
 
 .percent-wrapper{

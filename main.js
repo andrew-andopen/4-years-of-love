@@ -13,7 +13,7 @@ const ContTotal = {val: 0},
 
 const tlInsta = gsap.timeline();
 tlInsta
-.to(".emoji-wrap",  4,{yPercent: -75, ease:  CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")},)
+.to(".emoji-wrap",  4,{yPercent: -96, ease:  CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")},)
 .to(".feed-wrapper", 4,{yPercent: -89.8, ease: CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")}, 0)
 .to(ContTotal, 4, {
   val: NewVal,
@@ -21,17 +21,27 @@ tlInsta
   onUpdate: function() {
     const formattedNumber = ContTotal.val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
-    document.getElementById('wins-counter').innerHTML = formattedNumber + '<br> Happy Customers';
+    document.getElementById('wins-counter').innerHTML = formattedNumber + '<br>happy customers';
   }
 }, 0);
+
 
 ScrollTrigger.create({
   animation: tlInsta,
   trigger: ".wins",
-  start: "-10%",
-  end: "-10%",
+  start: "-20%",
+  end: "-20%",
 });
 
+const tlWinner = gsap.timeline({ repeat:1, yoyo:true }).delay(3.5);
+tlWinner
+.fromTo(".winner", 1, {scale: 0, opacity:0, rotationY: 0, rotationY: 0,}, {scale: 1, opacity:0.7, rotationY: 540,});
+ScrollTrigger.create({
+  animation: tlWinner,
+  trigger: ".wins",
+  start: "-20%",
+  end: "-20%",
+});
 
 //Main animation
 let dots = [],
