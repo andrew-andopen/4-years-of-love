@@ -1,9 +1,9 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // Insta
-ScrollTrigger.defaults({
-  markers: true,
-})
+// ScrollTrigger.defaults({
+//   markers: true,
+// })
 
 
 
