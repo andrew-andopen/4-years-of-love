@@ -1,22 +1,35 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // Insta
-// ScrollTrigger.defaults({
-//   markers: true,
-// })
+ScrollTrigger.defaults({
+  markers: true,
+})
+
+
+
+///COUNTER
+const ContTotal = {val: 0},
+  NewVal = 124546;
 
 const tlInsta = gsap.timeline();
 tlInsta
-.to(".emoji-wrap", {yPercent: -77, ease: "easeInOut"},)
-.to(".feed-wrapper", {yPercent: -75, ease: "easeInOut"}, 0);;
+.to(".emoji-wrap",  4,{yPercent: -75, ease:  CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")},)
+.to(".feed-wrapper", 4,{yPercent: -89.8, ease: CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")}, 0)
+.to(ContTotal, 4, {
+  val: NewVal,
+  roundProps: 'val',
+  onUpdate: function() {
+    const formattedNumber = ContTotal.val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+    document.getElementById('wins-counter').innerHTML = formattedNumber + '<br> Happy Customers';
+  }
+}, 0);
 
 ScrollTrigger.create({
   animation: tlInsta,
   trigger: ".wins",
-  scrub: 2,
-  pin: true,
-  anticipatePin: 1,
-  pinSpacing:true,
+  start: "-10%",
+  end: "-10%",
 });
 
 
