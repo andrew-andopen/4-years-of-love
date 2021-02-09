@@ -33,7 +33,7 @@ ScrollTrigger.create({
   end: "-20%",
 });
 
-const tlWinner = gsap.timeline({ repeat:1, yoyo:true }).delay(3.5);
+const tlWinner = gsap.timeline({ repeat:1, yoyo:true }).delay(4);
 tlWinner
 .fromTo(".winner", 1, {scale: 0, opacity:0, rotationY: 0, rotationY: 0,}, {scale: 1, opacity:0.7, rotationY: 540,});
 ScrollTrigger.create({
