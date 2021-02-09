@@ -126,6 +126,10 @@ button:hover{
 }
 
 
+#email-form-field{
+  display:none;
+}
+
 
 
 @media only screen  and (max-width: 1536px) {
