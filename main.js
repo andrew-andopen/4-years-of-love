@@ -107,8 +107,12 @@ console.log(fname);
 const lname = urlParams.get('lname')
 console.log(lname);
 
+const email = urlParams.get('email')
+console.log(email);
+
 const firstNameTag = document.querySelectorAll(".fname")
 const lastNameTag = document.querySelectorAll(".lname")
+const emailTag = document.querySelectorAll(".email")
 
   firstNameTag.forEach((firstNameInput) => {
     firstNameInput.value = fname
@@ -116,6 +120,10 @@ const lastNameTag = document.querySelectorAll(".lname")
 
   lastNameTag.forEach((lastNameInput) => {
     lastNameInput.value = lname
+  });
+
+  emailTag.forEach((emailInput) => {
+    emailInput.value = email
   });
 
 
