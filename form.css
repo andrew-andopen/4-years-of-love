@@ -127,7 +127,9 @@ button:hover{
 
 
 #email-form-field{
-  display:none;
+  height:0px;
+  width:0px;
+  opacity: 0;
 }
 
 
