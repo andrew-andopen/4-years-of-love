@@ -368,16 +368,6 @@ span.emoji {
   height: 60px;
 }
 
-.success{
-  background-color: #faf7f300;
-  z-index: 20;
-}
-
-.success-feature#featureAnimation{
-  background-color: #fece62;
-  height: 100vh;
-}
-
 .success-btn{
   margin: 2rem auto 0 auto;
 }
@@ -399,6 +389,19 @@ footer h3.tag {
   padding-left: 50px;
   width: 400px;
   max-width: 100%;
+}
+
+#success{
+  background-color: #fece62;
+}
+
+.success{
+  background-color: #faf7f300;
+}
+
+.success-feature#featureAnimation{
+  background-color: #fece62;
+  height: 100vh;
 }
 
 @media only screen and (max-width: 1536px) {
