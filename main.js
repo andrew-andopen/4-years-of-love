@@ -38,7 +38,7 @@ tlWinner
 ScrollTrigger.create({
   animation: tlWinner,
   trigger: ".wins",
-  start: "-20%"
+  start: "-20%",
 });
 
 //Main animation
