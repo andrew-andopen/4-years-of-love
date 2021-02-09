@@ -397,6 +397,7 @@ footer h3.tag {
 
 .success{
   background-color: #faf7f300;
+  overflow-y: hidden;
 }
 
 .success-feature#featureAnimation{
