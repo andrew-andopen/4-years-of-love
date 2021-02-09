@@ -89,7 +89,7 @@ gsap.set(dots, {
 //Marquee
 const giftZone = '<h1>Gift Zone</h1>';
 const giftImage = '<img src="oprah.png" class="oprah">';
-const newtext = new Array(100).fill(giftZone).join(giftImage);
+const newtext = new Array(120).fill(giftZone).join(giftImage);
 
 const marqueeText = document.querySelector('.marquee-text')
 marqueeText.innerHTML = newtext
