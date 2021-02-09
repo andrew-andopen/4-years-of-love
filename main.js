@@ -30,7 +30,6 @@ ScrollTrigger.create({
   animation: tlInsta,
   trigger: ".wins",
   start: "-20%",
-  end: "-20%",
 });
 
 const tlWinner = gsap.timeline({ repeat:1, yoyo:true }).delay(4);
@@ -39,8 +38,7 @@ tlWinner
 ScrollTrigger.create({
   animation: tlWinner,
   trigger: ".wins",
-  start: "-20%",
-  end: "-20%",
+  start: "-20%"
 });
 
 //Main animation
