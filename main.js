@@ -7,6 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
+
+
 ///COUNTER
 const ContTotal = {val: 0},
   NewVal = 200000;
@@ -104,7 +106,11 @@ gsap.set(dots, {
 
 
 
-
+if (window.location.href ==  'index.html') {
+  console.log("this is index page");
+} else {
+  console.log("this is not page");
+}
 
 
 //Marquee
@@ -180,3 +186,17 @@ checkValue()
 })
 
 
+
+// gsap.to('.card', {
+//   rotateX:360,
+//   duration: 1,
+// })
+
+// const tlTestTwo = gsap.timeline();
+// tlTestTwo.staggerTo('.card', 0.5, {rotateX:360, duration: 0.5, ease:"none"}, 0.1)
+
+// const tlTestTwo = gsap.timeline().delay(4);
+
+// tlTestTwo.to('.card .back', {rotateX:180, duration: 0.5, ease:"none"})
+// .to('.card .front', {rotateX:360, duration: 0.5, ease:"none"}, 0)
+// .to('.card', {rotateX:360, duration: 0.5, ease:"none"}, 0)
