@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 ///COUNTER
 const ContTotal = {val: 0},
-  NewVal = 124546;
+  NewVal = 60000;
 
 const tlInsta = gsap.timeline();
 tlInsta
