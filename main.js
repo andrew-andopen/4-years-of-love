@@ -103,16 +103,6 @@ gsap.set(dots, {
 })
   
 
-
-
-
-if (window.location.href ==  'index.html') {
-  console.log("this is index page");
-} else {
-  console.log("this is not page");
-}
-
-
 //Marquee
 const giftZone = '<h1>Gift Zone</h1>';
 const giftImage = '<img src="oprah.png" class="oprah">';
