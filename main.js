@@ -15,8 +15,8 @@ const ContTotal = {val: 0},
 
 const tlInsta = gsap.timeline();
 tlInsta
-.to(".emoji-wrap",  4,{yPercent: -96, ease:  CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")},)
-.to(".feed-wrapper", 4,{yPercent: -89.8, ease: CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")}, 0)
+.to(".emoji-wrap",  6,{yPercent: -96, ease:  CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")},)
+.to(".feed-wrapper", 6,{yPercent: -80.9, ease: CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")}, 0)
 .to(ContTotal, 4, {
   val: NewVal,
   roundProps: 'val',
