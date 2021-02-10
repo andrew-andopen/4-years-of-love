@@ -43,9 +43,15 @@ h4 {
   font-family: nittigrotesk-light;
 }
 
+p{
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
 a{
   text-decoration: none;
   line-height:1;
+  cursor:pointer;
 }
 
 /*utility*/
@@ -345,6 +351,10 @@ span.emoji {
   font-size: 3rem;
   line-height: 1;
   margin-bottom: 1rem;
+}
+
+.card h2{
+  margin-bottom: 0.4rem;
 }
 
 .marquee {
