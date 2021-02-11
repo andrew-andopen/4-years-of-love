@@ -111,6 +111,7 @@ ScrollTrigger.create({
   trigger: ".wins",
   start: "0",
   anticipatePin: 1,
+  toggleActions: "restart none none pause",
 });
 
 
