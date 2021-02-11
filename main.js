@@ -92,7 +92,7 @@ ScrollTrigger.create({
   animation: tlCounter,
   trigger: ".last-year",
   start: "0%",
-  end: "80%",
+  end: "70%",
   scrub: 1,
   id: "COUNTER",
   anticipatePin: 1,
@@ -143,7 +143,7 @@ tlCards.staggerTo(".card", 0.3, {opacity: "1", y:"0", scale: "1", ease:Power3.ea
 ScrollTrigger.create({
   animation: tlCards,
   trigger: ".more",
-  start: "0",
+  start: "-5%",
 });
 
 
