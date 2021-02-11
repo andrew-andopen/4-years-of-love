@@ -75,17 +75,14 @@ if(index){
 // })
 
 
-
-
-
 ///COUNTER
 const ContTotal = {val: 0},
   NewVal = 200000;
 
 const tlInsta = gsap.timeline();
 tlInsta
-.to(".emoji-wrap",  6,{yPercent: -96, ease:  CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")},)
-.to(".feed-wrapper", 6,{yPercent: -80.9, ease: CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")}, 0)
+.to(".emoji-wrap",  5.5,{yPercent: -96, ease:  CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")},)
+.to(".feed-wrapper", 5.5,{yPercent: -80.9, ease: CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")}, 0)
 .to(ContTotal, 4, {
   val: NewVal,
   roundProps: 'val',
@@ -103,14 +100,14 @@ ScrollTrigger.create({
   start: "-20%",
 });
 
-const tlWinner = gsap.timeline({ repeat:1, yoyo:true }).delay(4);
-tlWinner
-.fromTo(".winner", 1, {scale: 0, opacity:0, rotationY: 0, rotationY: 0,}, {scale: 1, opacity:0.7, rotationY: 540,});
-ScrollTrigger.create({
-  animation: tlWinner,
-  trigger: ".wins",
-  start: "-20%",
-});
+// const tlWinner = gsap.timeline({ repeat:1, yoyo:true }).delay(4);
+// tlWinner
+// .fromTo(".winner", 1, {scale: 0, opacity:0, rotationY: 0, rotationY: 0,}, {scale: 1, opacity:0.7, rotationY: 540,});
+// ScrollTrigger.create({
+//   animation: tlWinner,
+//   trigger: ".wins",
+//   start: "-20%",
+// });
   
 
 //Marquee
