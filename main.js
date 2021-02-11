@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-//Main animation
+//Global JS
 let dots = [],
   bg = document.querySelector('#featureAnimation'),
   i,
@@ -64,12 +64,11 @@ gsap.set(dots, {
 
 
 
-
+//Index specific JS
 const index = document.getElementById('index')
-
 if(index){
 
-// Insta
+// Global scroll attributes
 // ScrollTrigger.defaults({
 //   markers: true,
 // })
@@ -79,10 +78,11 @@ if(index){
 const ContTotal = {val: 0},
   NewVal = 200000;
 
+///Insta
 const tlInsta = gsap.timeline();
 tlInsta
-.to(".emoji-wrap",  5.5,{yPercent: -96, ease:  CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")},)
-.to(".feed-wrapper", 5.5,{yPercent: -80.9, ease: CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")}, 0)
+.to(".emoji-wrap",  7,{yPercent: -96, ease:  CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")},)
+.to(".feed-wrapper", 7,{yPercent: -95, ease: CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")}, 0)
 .to(ContTotal, 4, {
   val: NewVal,
   roundProps: 'val',
@@ -159,7 +159,7 @@ const titleName = document.querySelectorAll(".title-name")
     });
   } else {
     titleName.forEach((name) => {
-      name.innerHTML = "hello"
+      name.innerHTML = "there"
     });
   }
 
@@ -191,4 +191,22 @@ addressTwoTag.addEventListener('input', evt => {
 checkValue()
 })
 
+
+
 }
+
+
+
+
+//stagger cards
+const tlTestTwo = gsap.timeline();
+
+tlTestTwo.set(".card", {opacity:"0", y:"40px",})
+tlTestTwo.staggerTo(".card", 0.2, {opacity: "1", y:"0", ease:Power3.easeInOut}, 0.09,);
+
+
+
+
+
+
+

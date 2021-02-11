@@ -247,7 +247,7 @@ span.emoji {
 
 .smiley{
   text-align:center;
-  line-height:1.5;
+  line-height:1.4;
 }
 
 .feed-mask {
@@ -256,7 +256,7 @@ span.emoji {
   width: 293px;
   max-width:324px;
   height: 520px;
-  background-color: #ffb93c;
+  background-color: #ffffff;
   border-radius: 20px;
   margin-top: 1rem;
 }
@@ -266,7 +266,7 @@ span.emoji {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 1500%;
+  height: 2000%;
 }
 
 .panel {
@@ -277,22 +277,61 @@ span.emoji {
   background-repeat: no-repeat;
 }
 
-.panel:first-child,
+
 .doggo {
   background-image: url('doggo.png');
 }
 
-.panel:nth-child(2) {
+.aesop {
   background-image: url('aesop.png');
 }
 
-.panel:nth-child(3),
-.plant {
-  background-image: url('plant.png');
+.watering_can {
+  background-image: url('watering_can.png');
 }
 
-.panel:nth-child(4) {
-  background-image: url('doggo.png');
+.socks {
+  background-image: url('socks.png');
+}
+
+.keyring {
+  background-image: url('keyring.png');
+}
+
+.go_discover{
+  background-image: url('go_discover.png');
+}
+
+.cotton_throw{
+  background-image: url('cotton_throw.png');
+}
+
+.belong_anywhere {
+  background-image: url('belong_anywhere.png');
+}
+
+.aesop_mug{
+  background-image: url('aesop_mug.png');
+}
+
+.aepron {
+  background-image: url('aepron.png');
+}
+
+.aepron_2 {
+  background-image: url('aepron_2.png');
+}
+
+.keyring_door {
+  background-image: url('keyring_door.png');
+}
+
+.candle{
+  background-image: url('candle.png');
+}
+
+.belong_anywhere_2{
+  background-image: url('belong_anywhere_2.png');
 }
 
 .winner{
