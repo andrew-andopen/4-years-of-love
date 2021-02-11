@@ -69,36 +69,50 @@ const index = document.getElementById('index')
 if(index){
 
 // Global scroll attributes
-// ScrollTrigger.defaults({
-//   markers: true,
-// })
-
+ScrollTrigger.defaults({
+  markers: true,
+})
 
 ///COUNTER
 const ContTotal = {val: 0},
-  NewVal = 200000;
+  NewVal = 159191;
 
-///Insta
-const tlInsta = gsap.timeline();
-tlInsta
-.to(".emoji-wrap",  7,{yPercent: -96, ease:  CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")},)
-.to(".feed-wrapper", 7,{yPercent: -95, ease: CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")}, 0)
-.to(ContTotal, 4, {
+const tlCounter = gsap.timeline();
+tlCounter.to(ContTotal, 4, {
   val: NewVal,
   roundProps: 'val',
   onUpdate: function() {
     const formattedNumber = ContTotal.val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
-    document.getElementById('wins-counter').innerHTML = formattedNumber + '<br>happy customers';
+    document.getElementById('gift-counter').innerHTML = formattedNumber;
   }
 }, 0);
 
+ScrollTrigger.create({
+  animation: tlCounter,
+  trigger: ".last-year",
+  start: "0%",
+  end: "80%",
+  scrub: 1,
+  id: "COUNTER",
+  anticipatePin: 1,
+});
+
+
+
+///Insta
+const tlInsta = gsap.timeline();
+tlInsta
+.to(".emoji-wrap",  7,{yPercent: -96, ease:  CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")},)
+.to(".feed-wrapper", 7,{yPercent: -95, ease: CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")}, 0);
 
 ScrollTrigger.create({
   animation: tlInsta,
   trigger: ".wins",
-  start: "-25%",
+  start: "0",
+  anticipatePin: 1,
 });
+
 
 
 
@@ -119,6 +133,18 @@ const newtext = new Array(120).fill(giftZone).join(giftImage);
 
 const marqueeText = document.querySelector('.marquee-text')
 marqueeText.innerHTML = newtext
+
+
+//Cards
+const tlCards = gsap.timeline();
+tlCards.set(".card", {opacity:"0", y:"40px", scale: "0.8"})
+tlCards.staggerTo(".card", 0.3, {opacity: "1", y:"0", scale: "1", ease:Power3.easeInOut}, 0.09,);
+
+ScrollTrigger.create({
+  animation: tlCards,
+  trigger: ".more",
+  start: "0",
+});
 
 
 //Pass in name to form
@@ -198,11 +224,8 @@ checkValue()
 
 
 
-//stagger cards
-const tlTestTwo = gsap.timeline();
 
-tlTestTwo.set(".card", {opacity:"0", y:"40px",})
-tlTestTwo.staggerTo(".card", 0.2, {opacity: "1", y:"0", ease:Power3.easeInOut}, 0.09,);
+
 
 
 

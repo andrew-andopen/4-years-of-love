@@ -140,7 +140,7 @@ header {
 }
 
 #featureAnimation {
-  height: 200vh;
+  height:300vh;
   overflow: hidden;
   position: absolute;
   top:0;
@@ -162,7 +162,8 @@ header {
 }
 
 .intro,
-.success{
+.success,
+.total-gifts{
   background-color: #fecf62;
 }
 
@@ -203,11 +204,26 @@ header {
   max-width: 100%;
 }
 
+.seinfeld{
+  width:300px;
+}
+
+.total-gifts{
+  background-color:#42584a00;
+}
+.total-gifts .container{
+  padding-top:0;
+  padding-bottom:20rem;
+}
+
+#gift-counter{
+  padding: 3rem 0;
+}
 
 .wins.wrapper {
-  background-color: #42584a;
   max-width:100vw;
   overflow-x: hidden;
+  background-color:#42584A;
 }
 
 .wins h1 {
@@ -334,7 +350,7 @@ span.emoji {
   background-image: url('belong_anywhere_2.png');
 }
 
-.winner{
+/* .winner{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -344,7 +360,8 @@ span.emoji {
   vertical-align: baseline;
   text-align:center;
   transform-origin: "50% 50%";
-}
+} */
+
 
 .percent-wrapper{
   position: relative;
@@ -582,8 +599,13 @@ h2 {
     max-width: 6rem;
   }
   
+
   .container{
         padding: 4rem 2rem;
+  }
+
+  .total-gifts .container{
+    padding: 4rem 2rem 8rem 2rem;
   }
 
   .shape {
@@ -620,6 +642,10 @@ h2 {
 
 .percent {
   font-size: 7rem;
+}
+
+.percent#gift-counter{
+  font-size: 5rem;
 }
 
 .twinkle-wrapper {
