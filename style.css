@@ -352,6 +352,10 @@ span.emoji {
   background-image: url('belong_anywhere_2.png');
 }
 
+.love-working{
+  overflow-x: hidden;
+}
+
 
 .percent-wrapper{
   position: relative;
@@ -501,6 +505,11 @@ h1{
   width:40px;
 }
 
+.total-gifts .container {
+  padding-top: 4rem;
+  padding-bottom: 12rem;
+}
+
   .phone {
     margin-top: 1rem;
   }
@@ -527,6 +536,11 @@ h1{
 
 h2 {
   font-size: 1.5rem;
+}
+
+.wins h2,
+.outro h2{
+  margin:0;
 }
   
   header,
@@ -583,7 +597,7 @@ h2 {
 @media only screen and (max-width: 540px) {
 
   h1{
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
  
   h2,
@@ -625,11 +639,11 @@ h2 {
   }
 
   .intro .title-intro{
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
   }
 
   .explore{
-    bottom: 7.5rem;
+    bottom: 3.5rem;
   }
 
   .seinfeld, 
@@ -653,6 +667,7 @@ h2 {
 
 .percent#gift-counter{
   font-size: 5rem;
+  padding: 1rem 0;
 }
 
 .twinkle-wrapper {

@@ -70,7 +70,7 @@ if(index){
 
 // Global scroll attributes
 ScrollTrigger.defaults({
-  markers: true,
+  markers: false,
 })
 
 ///COUNTER
@@ -109,9 +109,9 @@ tlInsta
 ScrollTrigger.create({
   animation: tlInsta,
   trigger: ".wins",
-  start: "0",
+  start: "-5%",
   anticipatePin: 1,
-  toggleActions: "restart none none pause",
+  toggleActions: "play pause resume reset",
 });
 
 
