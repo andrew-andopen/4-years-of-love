@@ -648,7 +648,11 @@ h2 {
 
   .seinfeld, 
   .wonka {
-    padding: 1.2rem 0;
+    padding: 2rem 0;
+}
+
+.seinfeld{
+  max-width:80%;
 }
   
 .start-two-span-four {
