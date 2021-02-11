@@ -226,9 +226,11 @@ header {
   background-color:#42584A;
 }
 
-.wins h1 {
-  color: #141414;
+
+.wins h2{
+  margin: 0 25rem;
 }
+
 
 .phone {
   filter: drop-shadow(-30px 20px 10px rgba(0, 0, 0, 0.2));

@@ -137,8 +137,8 @@ marqueeText.innerHTML = newtext
 
 //Cards
 const tlCards = gsap.timeline();
-tlCards.set(".card", {opacity:"0", y:"40px", scale: "0.8"})
-tlCards.staggerTo(".card", 0.3, {opacity: "1", y:"0", scale: "1", ease:Power3.easeInOut}, 0.09,);
+tlCards.set(".card", {opacity:"0", y:"80px",})
+tlCards.staggerTo(".card", 0.3, {opacity: "1", y:"0", ease:Power3.easeInOut}, 0.09,);
 
 ScrollTrigger.create({
   animation: tlCards,
