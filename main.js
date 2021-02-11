@@ -64,6 +64,11 @@ const images = [
   'sock.png'
 ]
 
+const index = document.getElementById('index')
+const success = document.getElementById('success')
+
+
+if(index, success) {
   // create 80 dot elements and put them in an array
 for (i = 0; i < 30; i++) {
   dot = document.createElement('div')
@@ -101,6 +106,8 @@ gsap.set(dots, {
   },
    repeat: -1,
 })
+
+}
   
 
 //Marquee

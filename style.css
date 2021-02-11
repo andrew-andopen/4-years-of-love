@@ -556,7 +556,7 @@ h2 {
     background-repeat: no-repeat;
   }
 
-  .intro h1{
+  .intro .title-intro{
     margin-bottom: 4rem;
   }
 
@@ -614,5 +614,3 @@ h2 {
 }
   
 }
-
-
