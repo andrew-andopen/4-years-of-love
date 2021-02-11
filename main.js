@@ -97,8 +97,10 @@ tlInsta
 ScrollTrigger.create({
   animation: tlInsta,
   trigger: ".wins",
-  start: "-20%",
+  start: "-25%",
 });
+
+
 
 // const tlWinner = gsap.timeline({ repeat:1, yoyo:true }).delay(4);
 // tlWinner
@@ -151,9 +153,16 @@ const titleName = document.querySelectorAll(".title-name")
     emailInput.value = email
   });
 
-  titleName.forEach((name) => {
-    name.innerHTML = fname
-  });
+  if (fname) {
+    titleName.forEach((name) => {
+      name.innerHTML = fname
+    });
+  } else {
+    titleName.forEach((name) => {
+      name.innerHTML = "hello"
+    });
+  }
+
 
 
 //validate non requered fields
