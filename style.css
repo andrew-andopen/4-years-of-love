@@ -218,6 +218,8 @@ header {
 
 #gift-counter{
   padding: 3rem 0;
+  font-size: 12rem;
+  line-height: 1;
 }
 
 .wins.wrapper {
@@ -551,6 +553,11 @@ h2 {
   .percent {
   font-size: 10rem;
 }
+
+
+  #gift-counter {
+    font-size: 7rem;
+  }
   
   .container{
       padding: 8rem 3rem;
@@ -589,12 +596,16 @@ h2 {
       text-align: center;
 }
   
-    .card {
+    /* .card {
   width: calc(50% - 1rem);
+} */
+
+    .card {
+  width: 100%;
 }
 }
 
-@media only screen and (max-width: 540) {
+@media only screen and (max-width: 540px) {
   .intro .title-intro{
     margin-bottom: 3rem;
   }
@@ -602,9 +613,15 @@ h2 {
   .explore{
     bottom: 8.5rem;
   }
+
+
+  #gift-counter {
+    font-size: 6rem;
+  }
+
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
 
   h1{
     font-size: 2.2rem;
@@ -679,9 +696,8 @@ h2 {
   font-size: 7rem;
 }
 
-.percent#gift-counter{
-  font-size: 5rem;
-  padding: 1rem 0;
+#gift-counter {
+  font-size: 4rem;
 }
 
 .twinkle-wrapper {

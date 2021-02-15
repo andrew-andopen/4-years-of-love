@@ -165,7 +165,6 @@ console.log(email);
 
 const firstNameTag = document.querySelectorAll(".fname")
 const lastNameTag = document.querySelectorAll(".lname")
-const emailTag = document.querySelectorAll(".email")
 const titleName = document.querySelectorAll(".title-name")
 
   firstNameTag.forEach((firstNameInput) => {
@@ -176,9 +175,6 @@ const titleName = document.querySelectorAll(".title-name")
     lastNameInput.value = lname
   });
 
-  emailTag.forEach((emailInput) => {
-    emailInput.value = email
-  });
 
   if (fname) {
     titleName.forEach((name) => {
