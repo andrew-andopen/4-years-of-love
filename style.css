@@ -264,9 +264,9 @@ header {
 }
 
 .loop{
-  scale:1.5;
-  margin-top:2%;
-  margin-right:35%;
+  scale:3;
+  margin-top:12%;
+  margin-right:65%;
 }
 
 .wins.wrapper {
@@ -492,14 +492,14 @@ span.emoji {
 .marquee h1 {
   font-size: 4vw;
   white-space: nowrap;
-  margin: 0px 40px;
+  margin: 0px 30px;
 }
 
-.oprah {
-  height: 60px;
+.g-box {
+  font-size: 50px;
 }
 
-.marquee:hover .oprah {
+.marquee:hover .g-box {
   animation: rotate 3s infinite linear;
 }
 
@@ -559,6 +559,12 @@ h1{
   padding-bottom: 12rem;
 }
 
+.loop{
+  margin-top:3%;
+  margin-right:40%;
+  transform: scale(0.5);
+}
+
   .phone {
     margin-top: 1rem;
   }
@@ -605,6 +611,10 @@ h2 {
   #gift-counter {
     font-size: 7rem;
   }
+
+  .loop{
+    transform: scale(0.4);
+  }
   
   .container{
       padding: 8rem 3rem;
@@ -650,6 +660,12 @@ h2 {
     .card {
   width: 100%;
 }
+
+.loop{
+  margin-top:0;
+  margin-right:50%;
+  transform:scale(0.3);
+}
 }
 
 @media only screen and (max-width: 540px) {
@@ -664,6 +680,12 @@ h2 {
 
   #gift-counter {
     font-size: 6rem;
+  }
+
+  .loop{
+    transform: rotate(312deg) scale(0.3);
+    margin-right:0;
+    margin-top: 20%;
   }
 
 }

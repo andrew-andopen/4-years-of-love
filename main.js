@@ -70,7 +70,7 @@ if(index){
 
 // Global scroll attributes
 ScrollTrigger.defaults({
-  markers: true,
+  markers: false,
 })
 
 ///COUNTER
@@ -103,14 +103,15 @@ ScrollTrigger.create({
 const tlLooper = gsap.timeline();
 
 tlLooper.fromTo("#looper",{drawSVG:"0%"}, {drawSVG:"100%"})
-.fromTo("#arrow-head", {drawSVG:"0%"}, {drawSVG:"100%"});
+.fromTo("#arrow-head", {drawSVG:"0%"}, {drawSVG:"100%"})
+.fromTo("#so-far", {scale: 0}, {scale: 1});
 
 
 ScrollTrigger.create({
   animation: tlLooper,
   trigger: ".total-gifts",
-  start: "-10%",
-  end: "20%",
+  start: "-25%",
+  end: "10%",
   scrub: 1,
   id: "Looper",
   anticipatePin: 1,
@@ -147,7 +148,7 @@ ScrollTrigger.create({
 
 //Marquee
 const giftZone = '<h1>gift for you</h1>';
-const giftImage = ' 🎁 ';
+const giftImage = '<div class="g-box"> 🎁 </div>';
 const newtext = new Array(120).fill(giftZone).join(giftImage);
 
 const marqueeText = document.querySelector('.marquee-text')
