@@ -190,7 +190,7 @@ header {
 }
 
 #featureAnimation {
-  height:300vh;
+  height:350vh;
   overflow: hidden;
   position: absolute;
   top:0;
@@ -674,7 +674,7 @@ h2 {
   }
 
   .explore{
-    bottom: 8.5rem;
+    bottom: 6.5rem;
   }
 
 
