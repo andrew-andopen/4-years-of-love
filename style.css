@@ -265,7 +265,7 @@ header {
 
 .loop{
   transform:scale(3);
-  margin-top:12%;
+  margin-top:6%;
   margin-right:65%;
 }
 
@@ -565,7 +565,7 @@ h1{
 
 .loop{
   margin-top:3%;
-  margin-right:40%;
+  margin-right:50%;
   transform: scale(1.8);
 }
 
@@ -688,7 +688,7 @@ h2 {
 
   .loop{
     transform: rotate(312deg) scale(1);
-    margin-right:0;
+    margin-right: 20%;
     margin-top: 15%;
   }
 
