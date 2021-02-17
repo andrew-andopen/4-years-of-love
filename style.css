@@ -497,6 +497,7 @@ span.emoji {
 
 .g-box {
   font-size: 50px;
+  transform-origin: center center;
 }
 
 .marquee:hover .g-box {
