@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
 
 
 
@@ -70,7 +70,7 @@ if(index){
 
 // Global scroll attributes
 ScrollTrigger.defaults({
-  markers: false,
+  markers: true,
 })
 
 ///COUNTER
@@ -95,6 +95,24 @@ ScrollTrigger.create({
   end: "70%",
   scrub: 1,
   id: "COUNTER",
+  anticipatePin: 1,
+});
+
+
+///Looper
+const tlLooper = gsap.timeline();
+
+tlLooper.fromTo("#looper",{drawSVG:"0%"}, {drawSVG:"100%"})
+.fromTo("#arrow-head", {drawSVG:"0%"}, {drawSVG:"100%"});
+
+
+ScrollTrigger.create({
+  animation: tlLooper,
+  trigger: ".total-gifts",
+  start: "-10%",
+  end: "20%",
+  scrub: 1,
+  id: "Looper",
   anticipatePin: 1,
 });
 
@@ -128,8 +146,8 @@ ScrollTrigger.create({
   
 
 //Marquee
-const giftZone = '<h1>Gift Zone</h1>';
-const giftImage = '<img src="oprah.png" class="oprah">';
+const giftZone = '<h1>gift for you</h1>';
+const giftImage = ' 🎁 ';
 const newtext = new Array(120).fill(giftZone).join(giftImage);
 
 const marqueeText = document.querySelector('.marquee-text')
@@ -217,6 +235,7 @@ checkValue()
 
 
 }
+
 
 
 

@@ -76,6 +76,10 @@ a{
   margin: 0 auto;
 }
 
+.relative {
+  position: relative;
+}
+
 .flex {
   display: flex;
 }
@@ -117,14 +121,60 @@ a{
   text-align: center;
 }
 
+.m-top-1 {
+  margin-top: 1.5rem;
+}
+
+
+.m-top-3 {
+  margin-top: 3rem;
+}
+
 .m-top-8 {
   margin-top: 8rem;
 }
 
+
 .highlight{
-  font-family: Saol Text Semibold; 
-  font-size:2.4rem;
-  line-height:1.1;
+  white-space: nowrap;
+}
+
+.highlight.circle:before{
+  background-image: url(circle.svg);
+  scale: 1.8;
+  bottom: 8%;
+}
+
+.highlight.line:before{
+  background-image: url(line.svg);
+  background-position: bottom;
+}
+
+.highlight.accents:before{
+  background-image: url(accents.svg);
+  background-position: bottom;
+  scale: 1.4;
+  bottom: 30%;
+}
+
+
+.highlight:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+transform-origin: center;
+  background-repeat: no-repeat;
+  background-position: center;
+z-index:-3;
+}
+
+
+
+.white{
+  color:#ffffff;
 }
 
 /*main*/
@@ -198,19 +248,10 @@ header {
   padding-bottom:0;
 }
 
-.seinfeld,
-.wonka {
-  padding: 3rem 0;
-  max-width: 100%;
-}
-
-.seinfeld{
-  width:300px;
-}
-
 .total-gifts{
   background-color:#42584a00;
 }
+
 .total-gifts .container{
   padding-top:0;
   padding-bottom:20rem;
@@ -220,6 +261,12 @@ header {
   padding: 3rem 0;
   font-size: 12rem;
   line-height: 1;
+}
+
+.loop{
+  scale:1.5;
+  margin-top:2%;
+  margin-right:35%;
 }
 
 .wins.wrapper {
@@ -672,15 +719,6 @@ h2 {
   .explore{
     bottom: 7.5rem;
   }
-
-  .seinfeld, 
-  .wonka {
-    padding: 2rem 0;
-}
-
-.seinfeld{
-  max-width:80%;
-}
   
 .start-two-span-four {
     grid-column: 1/13;
