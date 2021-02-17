@@ -549,10 +549,7 @@ h1{
   font-size:4rem;
 }
 
-.max-width-large{
-  max-width:1000px;
-}
-
+.max-width-large,
 .more .max-width-medium{
   max-width:1200px;
 }
