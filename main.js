@@ -169,18 +169,14 @@ ScrollTrigger.create({
 
 //Pass in name to form
 const queryString = window.location.search;
-console.log(queryString);
 
 const urlParams = new URLSearchParams(queryString);
 
 const fname = urlParams.get('fname')
-console.log(fname);
 
 const lname = urlParams.get('lname')
-console.log(lname);
 
 const email = urlParams.get('email')
-console.log(email);
 
 const firstNameTag = document.querySelectorAll(".fname")
 const lastNameTag = document.querySelectorAll(".lname")
