@@ -141,7 +141,7 @@ a{
 
 .highlight.circle:before{
   background-image: url(circle.svg);
-  scale: 1.8;
+  transform: scale(1.8);
   bottom: 8%;
 }
 
@@ -153,7 +153,7 @@ a{
 .highlight.accents:before{
   background-image: url(accents.svg);
   background-position: bottom;
-  scale: 1.4;
+  transform: scale(1.4);
   bottom: 30%;
 }
 
@@ -264,7 +264,7 @@ header {
 }
 
 .loop{
-  scale:3;
+  transform:scale(3);
   margin-top:12%;
   margin-right:65%;
 }
