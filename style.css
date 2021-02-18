@@ -689,7 +689,7 @@ h2 {
   }
 
   .explore{
-    bottom: 10.5rem;
+    bottom: 7.5rem;
   }
 
 
@@ -752,7 +752,7 @@ h2 {
   }
 
   .explore{
-    bottom: 4.5rem;
+    bottom: 7.5rem;
   }
   
 .start-two-span-four {
@@ -822,4 +822,13 @@ footer h3.tag {
   font-size: 12px;
 }
   
+}
+
+
+@media only screen and (max-width: 375px) {
+
+  .explore{
+    bottom: 4.5rem;
+  }
+
 }
