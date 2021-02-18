@@ -539,6 +539,12 @@ footer h3.tag {
 
 .success-btn{
   margin: 2rem auto 0 auto;
+  transition: 0.2s linear;
+}
+
+.success-btn:hover{
+  background-color: #FAF7F3;
+  color: #141414;
 }
 
 
