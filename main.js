@@ -70,7 +70,7 @@ if(index){
 
 // Global scroll attributes
 ScrollTrigger.defaults({
-  markers: false,
+  markers: true,
 })
 
 ///COUNTER
@@ -104,7 +104,7 @@ const tlLooper = gsap.timeline();
 
 tlLooper.fromTo("#looper",{drawSVG:"0%"}, {drawSVG:"100%"})
 .fromTo("#arrow-head", {drawSVG:"0%"}, {drawSVG:"100%"})
-.fromTo("#so-far", {scale: 0}, {scale: 1});
+.fromTo("#so-far", {scale: 0}, {scale: 1}, "-=0.8");
 
 
 ScrollTrigger.create({
