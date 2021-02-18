@@ -752,7 +752,7 @@ h2 {
   }
 
   .explore{
-    bottom: 7.5rem;
+    bottom: 8.5rem;
   }
   
 .start-two-span-four {
@@ -828,7 +828,7 @@ footer h3.tag {
 @media only screen and (max-width: 375px) {
 
   .explore{
-    bottom: 4.5rem;
+    bottom: 5rem;
   }
 
 }
