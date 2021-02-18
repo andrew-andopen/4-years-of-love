@@ -67,7 +67,7 @@ a{
 }
 
 .max-width-large {
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -496,7 +496,7 @@ span.emoji {
 }
 
 .g-box {
-  font-size: 50px;
+  font-size: 45px;
   transform-origin: center center;
 }
 
