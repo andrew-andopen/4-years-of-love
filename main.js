@@ -171,38 +171,38 @@ ScrollTrigger.create({
 
 
 //Pass in name to form
-const queryString = window.location.search;
+// const queryString = window.location.search;
 
-const urlParams = new URLSearchParams(queryString);
+// const urlParams = new URLSearchParams(queryString);
 
-const fname = urlParams.get('fname')
+// const fname = urlParams.get('fname')
 
-const lname = urlParams.get('lname')
+// const lname = urlParams.get('lname')
 
-const email = urlParams.get('email')
+// const email = urlParams.get('email')
 
-const firstNameTag = document.querySelectorAll(".fname")
-const lastNameTag = document.querySelectorAll(".lname")
-const titleName = document.querySelectorAll(".title-name")
+// const firstNameTag = document.querySelectorAll(".fname")
+// const lastNameTag = document.querySelectorAll(".lname")
+// const titleName = document.querySelectorAll(".title-name")
 
-  firstNameTag.forEach((firstNameInput) => {
-    firstNameInput.value = fname
-  });
+//   firstNameTag.forEach((firstNameInput) => {
+//     firstNameInput.value = fname
+//   });
 
-  lastNameTag.forEach((lastNameInput) => {
-    lastNameInput.value = lname
-  });
+//   lastNameTag.forEach((lastNameInput) => {
+//     lastNameInput.value = lname
+//   });
 
 
-  if (fname) {
-    titleName.forEach((name) => {
-      name.innerHTML = fname
-    });
-  } else {
-    titleName.forEach((name) => {
-      name.innerHTML = "there"
-    });
-  }
+//   if (fname) {
+//     titleName.forEach((name) => {
+//       name.innerHTML = fname
+//     });
+//   } else {
+//     titleName.forEach((name) => {
+//       name.innerHTML = "there"
+//     });
+//   }
 
 
 
