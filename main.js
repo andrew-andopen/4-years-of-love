@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
 
 
@@ -67,6 +67,9 @@ gsap.set(dots, {
 //Index specific JS
 const index = document.getElementById('index')
 if(index){
+
+  gsap.registerPlugin(DrawSVGPlugin);
+  
 
 // Global scroll attributes
 ScrollTrigger.defaults({
