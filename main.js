@@ -70,7 +70,7 @@ if(index){
 
 // Global scroll attributes
 ScrollTrigger.defaults({
-  markers: true,
+  markers: false,
 })
 
 ///COUNTER
