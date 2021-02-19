@@ -245,8 +245,9 @@ header {
 
 
 .last-year .container{
-  padding-top:0;
-  padding-bottom:0;
+  padding:0 7rem;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .total-gifts{
