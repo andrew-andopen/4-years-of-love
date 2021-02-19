@@ -140,9 +140,10 @@ a{
 }
 
 .highlight.circle:before{
-  background-image: url(circle.svg);
-  transform: scale(1.8);
-  bottom: 8%;
+  background-image: url(circle_thousands.svg);
+  transform: scale(2);
+  bottom: 15%;
+  left:5%;
 }
 
 .highlight.line:before{
