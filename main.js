@@ -125,8 +125,8 @@ ScrollTrigger.create({
 ///Insta
 const tlInsta = gsap.timeline();
 tlInsta
-.to(".emoji-wrap",  18,{yPercent: -95.5, ease: "none"},)
-.to(".feed-wrapper", 18,{yPercent: -95, ease: "none"}, 0);
+.to(".emoji-wrap",  18,{yPercent: -94.5, ease: "none"},)
+.to(".feed-wrapper", 18,{yPercent: -94.3, ease: "none"}, 0);
 
 // , ease:  CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")
 // , ease: CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")
