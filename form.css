@@ -93,23 +93,26 @@ select:-webkit-autofill:focus {
 }
 
 button{
-  font-family: nittigrotesk-light;
+  font-family: Airbnb Cereal Medium;
   font-size: 1.23rem;
   padding: 0.8rem 2rem;
+  border-radius: 8px;
   cursor: pointer;
  margin: 2rem 0 0 0;
   border: none;
-  background-color: #141414;
   color: #ffffff;
   transition: background-color 0.2s linear;
   
   display: block;
   align-self: flex-start;
+
+  /* background: linear-gradient(to right, #E61E4D 0%, #E31C5F 50%, #D70466 100%); */
+  background-color:#000000;
 }
 
-button:hover{
+/* button:hover{
   background-color: #fece62;
-}
+} */
 
 
 

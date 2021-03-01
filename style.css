@@ -1,36 +1,44 @@
+
 @font-face {
-  font-family: Saol Text Semibold;
-  src: url(saol-text-semibold.otf);
+  font-family: Airbnb Cereal Bold;
+  src: url(AirbnbCereal_Bold.woff2);
+}
+
+
+@font-face {
+  font-family: Airbnb Cereal Medium;
+  src: url(airbnbcereal_w_medium.woff);
 }
 
 @font-face {
-  font-family: Leitura News Roman2;
-  src: url(leitura-news-roman-2.otf);
+  font-family: Airbnb Cereal Book;
+  src: url(airbnbcereal_w_book.woff);
 }
 
 @font-face {
-  font-family: nittigrotesk-light;
-  src: url(nittigrotesk-light.otf);
+  font-family: Airbnb Cereal Light;
+  src: url(AirbnbCereal_Light.woff2);
 }
 
 
 /*styles*/
 body {
-  background-color: #FAF7F3;
-  color: #141414;
-  font-family: Leitura News Roman2;
+  background-color: #ffffff;
+  color: #222222;
+  font-family: Airbnb Cereal Book;
   font-size: 16px;
   line-height: 1.4;
   overflow-x: hidden;
 }
 
 h1 {
-  font-family: Saol Text Semibold;
+  font-family: Airbnb Cereal Bold;
   font-size: 5rem;
   line-height: 1.1;
 }
 
 h2 {
+  font-family: Airbnb Cereal Medium;
   font-size: 2rem;
 }
 
@@ -40,7 +48,7 @@ h3 {
 
 p,
 h4 {
-  font-family: nittigrotesk-light;
+  font-family: Airbnb Cereal Book;
 }
 
 p{
@@ -149,6 +157,7 @@ a{
 .highlight.line:before{
   background-image: url(line.svg);
   background-position: bottom;
+  bottom:8px;
 }
 
 .highlight.accents:before{
@@ -174,8 +183,13 @@ z-index:-3;
 
 
 
+
 .white{
   color:#ffffff;
+}
+
+.light{
+  font-family: Airbnb Cereal Light;
 }
 
 /*main*/
@@ -215,7 +229,7 @@ header {
 .intro,
 .success,
 .total-gifts{
-  background-color: #fecf62;
+  background-color: #ffffff;
 }
 
 .intro .max-width-large{
@@ -250,6 +264,10 @@ header {
   overflow-x: hidden;
 }
 
+.last-year h1{
+  overflow:hidden;
+}
+
 .total-gifts{
   background-color:#42584a00;
 }
@@ -274,12 +292,13 @@ header {
 .wins.wrapper {
   max-width:100vw;
   overflow-x: hidden;
-  background-color:#42584A;
+  background-color:#f7f7f7;
 }
 
 
 .wins h2{
   margin: 0 25rem;
+  color: #222222;
 }
 
 
@@ -287,7 +306,7 @@ header {
   filter: drop-shadow(-30px 20px 10px rgba(0, 0, 0, 0.2));
   max-width:324px;
   padding: 20px 15px 40px 15px;
-  background-color: #faf7f3;
+  background-color: #ffffff;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -431,21 +450,23 @@ span.emoji {
 }
 
 .more {
-  background-color: #fece62;
+  background-color: #f7f7f7;
 }
 
 .slider-wrapper {
-  background-color: #fece62;
+  background-color: #f7f7f7;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .card {
   width: calc(30% - 1rem);
-  background-color: #faf7f3;
+  background-color: #ffffff;
   padding: 5rem 3rem;
   border-radius: 16px;
+  /* border:1px solid #dddddd; */
   margin: 1rem;
+  box-shadow: rgb(0 0 0 / 5%) 0px 2px 8px;
 }
 
 .card h1{
@@ -455,7 +476,8 @@ span.emoji {
 }
 
 .card h2{
-  margin-bottom: 0.4rem;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 .marquee {
@@ -526,7 +548,7 @@ footer h3.tag {
 }
 
 #success{
-  background-color: #fece62;
+  background-color: #007a87;
 }
 
 .success{
@@ -535,7 +557,7 @@ footer h3.tag {
 }
 
 .success-feature#featureAnimation{
-  background-color: #fece62;
+  background-color: #ffffff;
   height: 100vh;
 }
 
@@ -609,6 +631,14 @@ h2 {
   font-size: 1.5rem;
 }
 
+
+ 
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .wins h2,
 .outro h2{
   margin:0;
@@ -644,7 +674,7 @@ h2 {
 }
   
   .card {
-  background-color: #faf7f3;
+  background-color: #ffffff;
   padding: 3rem 2rem;
     margin: 0.5rem;
 }
@@ -719,15 +749,9 @@ h2 {
     font-size: 1.2rem;
   }
 
- 
-  header{
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
   
   .logo{
-    max-width: 6rem;
+    max-width: 8rem;
   }
   
 
