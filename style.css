@@ -567,8 +567,9 @@ footer h3.tag {
 }
 
 .success-btn:hover{
-  background-color: #FAF7F3;
-  color: #141414;
+  background-color: #ffffff;
+  color: #222222;
+  border: 1px solid #222222;
 }
 
 
