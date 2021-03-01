@@ -48,7 +48,7 @@ select {
   -moz-appearance: none;
   background-position: 98% 50%;
   background-repeat: no-repeat;
-  background-image: url(arrow.png);
+  background-image: url(airbnb_arrow.svg);
   background-size: 3%;
   cursor: pointer;
 }
