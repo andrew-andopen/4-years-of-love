@@ -205,7 +205,7 @@ header {
 }
 
 #featureAnimation {
-  height:350vh;
+  height:210vh;
   overflow: hidden;
   position: absolute;
   top:0;
@@ -228,7 +228,8 @@ header {
 
 .intro,
 .success,
-.total-gifts{
+.total-gifts,
+.outro{
   background-color: #ffffff;
 }
 
