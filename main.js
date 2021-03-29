@@ -68,7 +68,7 @@ gsap.set(dots, {
 const index = document.getElementById('index')
 if(index){
 
-  gsap.registerPlugin(DrawSVGPlugin);
+  // gsap.registerPlugin(DrawSVGPlugin);
   
 
 // Global scroll attributes
@@ -77,67 +77,67 @@ ScrollTrigger.defaults({
 })
 
 ///COUNTER
-const ContTotal = {val: 0},
-  NewVal = 159191;
+// const ContTotal = {val: 0},
+//   NewVal = 159191;
 
-const tlCounter = gsap.timeline();
-tlCounter.to(ContTotal, 4, {
-  val: NewVal,
-  roundProps: 'val',
-  onUpdate: function() {
-    const formattedNumber = ContTotal.val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+// const tlCounter = gsap.timeline();
+// tlCounter.to(ContTotal, 4, {
+//   val: NewVal,
+//   roundProps: 'val',
+//   onUpdate: function() {
+//     const formattedNumber = ContTotal.val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
-    document.getElementById('gift-counter').innerHTML = formattedNumber;
-  }
-}, 0);
+//     document.getElementById('gift-counter').innerHTML = formattedNumber;
+//   }
+// }, 0);
 
-ScrollTrigger.create({
-  animation: tlCounter,
-  trigger: ".last-year",
-  start: "0%",
-  end: "70%",
-  scrub: 1,
-  id: "COUNTER",
-  anticipatePin: 1,
-});
+// ScrollTrigger.create({
+//   animation: tlCounter,
+//   trigger: ".last-year",
+//   start: "0%",
+//   end: "70%",
+//   scrub: 1,
+//   id: "COUNTER",
+//   anticipatePin: 1,
+// });
 
 
 ///Looper
-const tlLooper = gsap.timeline();
+// const tlLooper = gsap.timeline();
 
-tlLooper.fromTo("#looper",{drawSVG:"0%"}, {drawSVG:"100%"})
-.fromTo("#arrow-head", {drawSVG:"0%"}, {drawSVG:"100%"})
-.fromTo("#so-far", {scale: 0}, {scale: 1}, "-=0.8");
+// tlLooper.fromTo("#looper",{drawSVG:"0%"}, {drawSVG:"100%"})
+// .fromTo("#arrow-head", {drawSVG:"0%"}, {drawSVG:"100%"})
+// .fromTo("#so-far", {scale: 0}, {scale: 1}, "-=0.8");
 
 
-ScrollTrigger.create({
-  animation: tlLooper,
-  trigger: ".total-gifts",
-  start: "-25%",
-  end: "10%",
-  scrub: 1,
-  id: "Looper",
-  anticipatePin: 1,
-});
+// ScrollTrigger.create({
+//   animation: tlLooper,
+//   trigger: ".total-gifts",
+//   start: "-25%",
+//   end: "10%",
+//   scrub: 1,
+//   id: "Looper",
+//   anticipatePin: 1,
+// });
 
 
 
 ///Insta
-const tlInsta = gsap.timeline();
-tlInsta
-.to(".emoji-wrap",  18,{yPercent: -94.5, ease: "none"},)
-.to(".feed-wrapper", 18,{yPercent: -94.3, ease: "none"}, 0);
+// const tlInsta = gsap.timeline();
+// tlInsta
+// .to(".emoji-wrap",  18,{yPercent: -94.5, ease: "none"},)
+// .to(".feed-wrapper", 18,{yPercent: -94.3, ease: "none"}, 0);
 
 // , ease:  CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")
 // , ease: CustomEase.create("custom", "M0,0,C0.104,0.204,0.536,1.12,1,1")
 
-ScrollTrigger.create({
-  animation: tlInsta,
-  trigger: ".wins",
-  start: "-5%",
-  anticipatePin: 1,
-  toggleActions: "play pause resume reset",
-});
+// ScrollTrigger.create({
+//   animation: tlInsta,
+//   trigger: ".wins",
+//   start: "-5%",
+//   anticipatePin: 1,
+//   toggleActions: "play pause resume reset",
+// });
 
 
 
@@ -162,15 +162,15 @@ marqueeText.innerHTML = newtext
 
 
 //Cards
-const tlCards = gsap.timeline();
-tlCards.set(".card", {opacity:"0", y:"80px",})
-tlCards.staggerTo(".card", 0.3, {opacity: "1", y:"0",}, 0.09,);
+// const tlCards = gsap.timeline();
+// tlCards.set(".card", {opacity:"0", y:"80px",})
+// tlCards.staggerTo(".card", 0.3, {opacity: "1", y:"0",}, 0.09,);
 
-ScrollTrigger.create({
-  animation: tlCards,
-  trigger: ".more",
-  start: "-5%",
-});
+// ScrollTrigger.create({
+//   animation: tlCards,
+//   trigger: ".more",
+//   start: "-5%",
+// });
 
 
 //Pass in name to form

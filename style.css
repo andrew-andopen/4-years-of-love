@@ -1,44 +1,36 @@
-
 @font-face {
-  font-family: Airbnb Cereal Bold;
-  src: url(AirbnbCereal_Bold.woff2);
-}
-
-
-@font-face {
-  font-family: Airbnb Cereal Medium;
-  src: url(airbnbcereal_w_medium.woff);
+  font-family: Saol Text Semibold;
+  src: url(saol-text-semibold.otf);
 }
 
 @font-face {
-  font-family: Airbnb Cereal Book;
-  src: url(airbnbcereal_w_book.woff);
+  font-family: Leitura News Roman2;
+  src: url(leitura-news-roman-2.otf);
 }
 
 @font-face {
-  font-family: Airbnb Cereal Light;
-  src: url(AirbnbCereal_Light.woff2);
+  font-family: nittigrotesk-light;
+  src: url(nittigrotesk-light.otf);
 }
 
 
 /*styles*/
 body {
   background-color: #ffffff;
-  color: #222222;
-  font-family: Airbnb Cereal Book;
+  color: #141414;
+  font-family: Leitura News Roman2;
   font-size: 16px;
   line-height: 1.4;
   overflow-x: hidden;
 }
 
 h1 {
-  font-family: Airbnb Cereal Bold;
+  font-family: Saol Text Semibold;
   font-size: 5rem;
   line-height: 1.1;
 }
 
 h2 {
-  font-family: Airbnb Cereal Medium;
   font-size: 2rem;
 }
 
@@ -48,7 +40,7 @@ h3 {
 
 p,
 h4 {
-  font-family: Airbnb Cereal Book;
+  font-family: nittigrotesk-light;
 }
 
 p{
@@ -227,10 +219,8 @@ header {
 }
 
 .intro,
-.success,
-.total-gifts,
-.outro{
-  background-color: #ffffff;
+.success{
+  background-color: #FECE62;
 }
 
 .intro .max-width-large{
@@ -512,6 +502,7 @@ span.emoji {
   animation: moveLeft 1000s infinite linear;
   white-space: nowrap;
   height: 124px;
+  background-color: #ffffff;
 }
 
 .marquee h1 {
@@ -534,7 +525,7 @@ span.emoji {
 }
 
 footer {
-  background-color: #F7F7F7;
+  background-color: #FAF7F3;
   padding: 5rem 5rem 10rem 5rem;
   bottom: 0;
 }

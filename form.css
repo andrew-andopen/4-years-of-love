@@ -48,7 +48,7 @@ select {
   -moz-appearance: none;
   background-position: 98% 50%;
   background-repeat: no-repeat;
-  background-image: url(airbnb_arrow.svg);
+  background-image: url(arrow.png);
   background-size: 3%;
   cursor: pointer;
 }
@@ -93,15 +93,14 @@ select:-webkit-autofill:focus {
 }
 
 button{
-  font-family: Airbnb Cereal Medium;
+  font-family: nittigrotesk-light;
   font-size: 1.23rem;
   padding: 0.8rem 2rem;
-  border-radius: 8px;
   cursor: pointer;
  margin: 2rem 0 0 0;
-  border: none;
+  border: 1px solid #141414;
   color: #ffffff;
-  transition: background-color 0.2s linear;
+  transition: all 0.2s linear;
   
   display: block;
   align-self: flex-start;
@@ -111,9 +110,8 @@ button{
 }
 
 button:hover{
-  background-color:#ffffff;
-  border: 1px solid #222222;
-  color: #222222;
+  background-color:#FECE62;
+  border: 1px solid #FECE62;
 }
 
 
