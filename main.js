@@ -153,9 +153,9 @@ ScrollTrigger.defaults({
   
 
 //Marquee
-const giftZone = '<h1>gift for you</h1>';
-const giftImage = '<div class="g-box"> 🎁 </div>';
-const newtext = new Array(120).fill(giftZone).join(giftImage);
+const giftZone = '<h1>Just let us know where to send it</h1>';
+const giftImage = '<div class="g-box"> — </div>';
+const newtext = new Array(220).fill(giftZone).join(giftImage);
 
 const marqueeText = document.querySelector('.marquee-text')
 marqueeText.innerHTML = newtext

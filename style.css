@@ -146,7 +146,7 @@ a{
 }
 
 .highlight.line:before{
-  background-image: url(community_line.svg);
+  background-image: url(together_line.svg);
   background-position: bottom;
 }
 
@@ -519,9 +519,9 @@ span.emoji {
   transform-origin: center center;
 }
 
-.marquee:hover .g-box {
+/* .marquee:hover .g-box {
   animation: rotate 3s infinite linear;
-}
+} */
 
 .outro h2{
   margin: 0 5rem;
@@ -562,6 +562,10 @@ footer h3.tag {
   background-color: #FAF7F3;
   color: #222222;
   border: 1px solid #FAF7F3;
+}
+
+.outro .container {
+  padding: 3rem 5rem;
 }
 
 
@@ -671,6 +675,12 @@ header{
   padding: 3rem 2rem;
     margin: 0.5rem;
 }
+
+  
+.outro .container {
+  padding: 0 2rem;
+}
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -726,6 +736,16 @@ header{
     transform: rotate(312deg) scale(1);
     margin-right: 20%;
     margin-top: 15%;
+  }
+
+  .marquee-text {
+    height:80px;
+    animation: moveLeft 200s infinite linear;
+  }
+  
+  .marquee h1{
+    font-size:10vw;
+    margin: 0px 20px;
   }
 
 }
@@ -814,24 +834,14 @@ header{
 .card {
   width: 100%;
 }
-  
-  .outro .container {
-    padding: 3rem 2rem;
-}
+
 
 .marquee {
   margin-top: 1rem;
   padding-top:1rem;
 }
 
-.marquee-text {
-  animation: moveLeft 200s infinite linear;
-}
 
-.marquee h1{
-  font-size:10vw;
-  margin: 0px 20px;
-}
 
 .g-box {
   font-size: 30px;
