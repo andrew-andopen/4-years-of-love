@@ -473,11 +473,13 @@ span.emoji {
 
 .marquee {
   top: 5vh;
+  padding-top:2rem;
   left: 0;
   width: 100%;
   line-height: 1;
   overflow: hidden;
   margin-top: 5rem;
+  background-color:#ffffff;
 }
 
 @keyframes moveLeft {
@@ -821,6 +823,7 @@ header{
 
 .marquee {
   margin-top: 1rem;
+  padding-top:1rem;
 }
 
 .marquee-text {
